@@ -1,4 +1,10 @@
-This repository an minimalistic experiment on Triton serving multiple models ( 2 to be exactly with pytorch) using latest CUDA 11 and TensorRT7.X
+This repository my minimalistic experiment on Triton serving multiple models ( 2 to be exactly with pytorch) using latest CUDA 11 and TensorRT7.X
+It is provided as is and is not maintained regularly, this is not meant as an official repo and user discretion is advised.  
+big thanks to Anas Abidin aabidin@nvidia.com , his triton and tensorRT deepdive webniar is brilliant, my experiment is completely based on his work! 
+
+# where to get the data 
+download the dataset from kaggle [facial expression](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge)
+unzip the fer2013.csv and put it under NB_images folder or you can get the donwloaded csv file from  [my google drive](https://drive.google.com/file/d/1eowMqIJxDe8bM6EacR6ibBR6VUbSqqWl/view?usp=sharing)
 
 # Setting up the environment
 
@@ -27,7 +33,12 @@ A separate container for the server needs to be launched using the script
 
 
 you should see something similar to the below screenshot 
+
+
+
+
 ![start_triton_server_successfully](<./pics/start_triton_with_empty_dir.JPG>) 
+
 
 #### TRITON metrics
 To launch Grafana dashboards for monitoring of metrics, please run `docker-compose up` from the [monitoring](./monitoring/) folder and navigate to [localhost:3000/](http://localhost:3000). Additional steps [here](./monitoring/readme.md).
