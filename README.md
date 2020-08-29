@@ -1,6 +1,5 @@
-This repository my minimalistic experiment on Triton serving multiple models ( 2 to be exactly with pytorch) using latest CUDA 11 and TensorRT7.X
-It is provided as is and is not maintained regularly, this is not meant as an official repo and user discretion is advised.  
-big thanks to Anas Abidin aabidin@nvidia.com , his triton and tensorRT deepdive webniar is brilliant, my experiment is completely based on his work! 
+This repository an minimalistic experiment on Triton serving multiple models ( 2 to be exactly with pytorch) using latest CUDA 11 and TensorRT7.X
+# big thanks to Anas Abidin aabidin@nvidia.com , his triton and tensorRT deepdive webniar [webniar link](https://event.on24.com/eventRegistration/EventLobbyServlet?target=reg20.jsp&partnerref=devnws&eventid=2355478&sessionid=1&key=F89A7BE8742F98334CEDDA4E86A6D5F0&regTag=1055756&sourcepage=register)  is brilliant, my pytorch serving with Triton experiment is completely based on his work! 
 
 # where to get the data 
 download the dataset from kaggle [facial expression](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge)
@@ -47,12 +46,25 @@ To launch Grafana dashboards for monitoring of metrics, please run `docker-compo
 # Notebooks
 
 The three notebooks in this repository walkthrough the example steps for using 
-1. build and train the first pytorch CNN model, then deploy it with TensorRT, then serve it with Triton step by step 
+
+
+### 1. build and train the first pytorch CNN model, then deploy it with TensorRT, then serve it with Triton step by step 
+
+
 1a_triton_serve_own_model.ipynb 
-2. pull a pre-trained pytorch model from torch model_zoo and then deploy it with TensorRT also serve it with Triton 
+
+
+### 2. pull a pre-trained pytorch model from torch model_zoo and then deploy it with TensorRT also serve it with Triton 
+
+
+
 1b_model2_pulled_from_pretrained_modelzoo.ipynb
-3. [NB3_lung_segmentation_3d](./NB3_lung_segmentation_3d.ipynb) walks through a simple 3D example with a graphdef backend. 
-* For replicating the experiments, additional clients can be launched to test inference with multiple models. For ex. 
+
+
+### 3. Inference the two models interactively using Triton server 
+
+
+2_triton_inference_structure
 
 open yet another terminal, then recursively copy the 1st model to the empty_dir/ to serve your first model ( under the folder custom_plan/ ) 
 ```
