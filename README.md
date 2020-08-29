@@ -1,5 +1,5 @@
 This repository an minimalistic experiment on Triton serving multiple models ( 2 to be exactly with pytorch) using latest CUDA 11 and TensorRT7.X
-# big thanks to Anas Abidin aabidin@nvidia.com , his triton and tensorRT deepdive webniar [webniar link](https://event.on24.com/eventRegistration/EventLobbyServlet?target=reg20.jsp&partnerref=devnws&eventid=2355478&sessionid=1&key=F89A7BE8742F98334CEDDA4E86A6D5F0&regTag=1055756&sourcepage=register)  is brilliant, my pytorch serving with Triton experiment is completely based on his work! 
+# big thanks to Anas Abidin aabidin@nvidia.com , his triton and tensorRT deepdive webniar [link here](https://event.on24.com/eventRegistration/EventLobbyServlet?target=reg20.jsp&partnerref=devnws&eventid=2355478&sessionid=1&key=F89A7BE8742F98334CEDDA4E86A6D5F0&regTag=1055756&sourcepage=register)  is brilliant, my pytorch serving with Triton experiment is completely based on his work! 
 
 # where to get the data 
 download the dataset from kaggle [facial expression](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge)
